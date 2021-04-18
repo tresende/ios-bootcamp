@@ -5,21 +5,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
     
-    var leftDiceNumber = 1
+    var leftDiceNumber = 0
+    var rigthDiceNumber = 5
+    var max = 5
+    var min = 0
+    var step = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func rollButtonPressed(_ sender: UIButton) {
-        diceImageView1.image = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][leftDiceNumber]
+        var diceArray = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
         
-        if(leftDiceNumber >= 5){
-            leftDiceNumber = 0
-        }
-        else {
-            leftDiceNumber = leftDiceNumber + 1
-        }
+        diceImageView1.image = diceArray[leftDiceNumber]
+        diceImageView2.image = diceArray[rigthDiceNumber]
+        
+        leftDiceNumber  = leftDiceNumber >= max ? min : leftDiceNumber + step
+        rigthDiceNumber = rigthDiceNumber <= min ? max : rigthDiceNumber - step
+    
     }
 }
 
