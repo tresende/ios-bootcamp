@@ -23,11 +23,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBreweryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Iff-9M-PPJ">
                                 <rect key="frame" x="112" y="418.5" width="190" height="59"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHj-Wd-76K">
-                                <rect key="frame" x="186" y="504" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-Cc-euR">
+                                <rect key="frame" x="143.5" y="507.5" width="127" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -36,16 +35,18 @@
                         <constraints>
                             <constraint firstItem="Iff-9M-PPJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dmz-cr-qOB"/>
                             <constraint firstItem="fEb-pf-Q9X" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="LZh-3q-vpp"/>
+                            <constraint firstItem="Cb2-Cc-euR" firstAttribute="top" secondItem="Iff-9M-PPJ" secondAttribute="bottom" constant="30" id="Qvj-9c-vP5"/>
                             <constraint firstItem="fEb-pf-Q9X" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="br9-FS-rz5"/>
                             <constraint firstAttribute="bottom" secondItem="fEb-pf-Q9X" secondAttribute="bottom" id="hfu-DG-hjD"/>
                             <constraint firstItem="Iff-9M-PPJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jNt-dS-Jze"/>
                             <constraint firstItem="fEb-pf-Q9X" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="sa1-QP-8JG"/>
+                            <constraint firstItem="Cb2-Cc-euR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yFi-NM-6HQ"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="373.66071428571428"/>
+            <point key="canvasLocation" x="51.5625" y="372.46376811594206"/>
         </scene>
     </scenes>
     <resources>
