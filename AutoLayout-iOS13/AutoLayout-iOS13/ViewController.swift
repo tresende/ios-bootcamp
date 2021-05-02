@@ -11,9 +11,6 @@ class ViewController: UIViewController {
         
         diceImageView1.image = allDice[Int.random(in: 0...5)]
         diceImageView2.image = allDice[Int.random(in: 0...5)]
-        
-        
-        performSegue(withIdentifier: "goTo", sender: self)
     }
     
 }
